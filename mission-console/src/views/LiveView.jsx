@@ -101,12 +101,6 @@ export function LiveView({ current, history, log }) {
               note={`avg ${val(t.avg_c)} · min ${val(t.min_c)}`}
               breach={t.max_c > HOTSPOT_THRESHOLD_C}
             />
-            <Readout
-              label="Hotspots"
-              value={t.hotspot_count}
-              note={`px over ${HOTSPOT_THRESHOLD_C}°C`}
-              breach={t.hotspot_count > 0}
-            />
           </div>
         </Panel>
 
